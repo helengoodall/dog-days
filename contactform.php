@@ -1,0 +1,91 @@
+<?php
+
+require_once("includes/global.php");
+
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Dog Days</title>
+
+
+<link href="style/main.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="wrap">
+
+<div id="header-wrap">
+	<?php include("includes/header.php"); ?>
+</div>
+
+<div id="container">
+
+    <div class="content">
+    
+<form name="contactform" method="post" action="email.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30"class="reg-textbox">
+ </td>
+</tr>
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30"class="reg-textbox">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30"class="reg-textbox">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30"class="reg-textbox">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"class="reg-textbox"></textarea>
+  
+
+</td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+ <input type="submit" value="Send" class="button">
+ </td>
+</tr>
+</table>
+</form>
+
+
+</div>
+</div>
+
+<div id="footer-wrap">
+	<?php include("includes/footer.php"); ?>
+</div>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+        <title>PetsUK</title>
+        <link href="style/style.css" rel="stylesheet" type="text/css" />
+        <meta name="description" content="Online comprehensive pet store" />
+        <link href="style/Mobmain.css" rel="stylesheet" type="text/css" />
+    </head>
+<body>
+	<header>
+        <div class="logo">
+            <a href="MobWebHome.html">
+                <img src="style/images/logo.png" alt="PetsUK" />
+          </a>
+            <ul>
+                <li class="bold">Welcome to PetsUK</li>
+                <li>
+                    <a href="register.php">Register</a>
+                </li>
+                <li>
+                    <a href="login.php">Login</a>
+                </li>
+            </ul>
+            
+        </header>
+        
+        <menu>
+        </div>
+		<nav class="vertical menu">
+            <ul>
+                <li><a href="category.php?id=1">Dogs</a></li>
+                <li><a href="category.php?id=2">Cats</a></li>
+                <li><a href="category.php?id=3">Fish</a></li>
+                <li><a href="category.php?id=4">Small Pets</a></li>
+                <li><a href="category.php?id=5">Horse</a></li>
+                <li><a href="adoption.php">Adoption</a></li>
+            </ul>
+        </nav> 
+        <div class="clear"></div>
+         </menu>
+	<footer>
+            
+        <?php include("includes/footer.php"); ?>
+        
+    </footer>
+			<script type="text/javascript">
+			
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-18607212-1']);
+			  _gaq.push(['_setDomainName', 'mobifreaks.com']);
+			  _gaq.push(['_setAllowLinker', true]);
+			  _gaq.push(['_trackPageview']);
+			
+			  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+			
+			</script>
+</body>
+</html>
